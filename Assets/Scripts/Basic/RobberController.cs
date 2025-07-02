@@ -7,7 +7,6 @@ public class RobberController : MonoBehaviour
     private static readonly int MoveSpeed = Animator.StringToHash("MoveSpeed");
     [SerializeField] private float _moveSpeed;
     
-    private Rigidbody2D _rigidbody;
     private Animator _animator;
     
     // Start is called before the first frame update
