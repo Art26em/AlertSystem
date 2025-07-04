@@ -1,12 +1,10 @@
 using UnityEngine;
 
-namespace Basic
+public class OutsiderCheck : MonoBehaviour
 {
-    public class OutsiderCheck : MonoBehaviour
-    {
-        [SerializeField] private float alertAscendingTime;
-        [SerializeField] private float alertDescendingTime;
-    
+    [SerializeField] private float alertAscendingTime;
+    [SerializeField] private float alertDescendingTime;
+
     private AudioSource _audioSource;
     private bool _outsiderEntered;
     private bool _outsiderGone;
