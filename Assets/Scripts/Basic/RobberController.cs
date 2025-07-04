@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class RobberController : MonoBehaviour
+namespace Basic
 {
-    private static readonly int MoveSpeed = Animator.StringToHash("MoveSpeed");
-    [SerializeField] private float _moveSpeed;
-    
-    private Animator _animator;
+    public class RobberController : MonoBehaviour
+    {
+        [SerializeField] private float moveSpeed;
+        
+        private static readonly int MoveSpeed = Animator.StringToHash("MoveSpeed");
+        private Animator _animator;
     
     void Start()
     {
