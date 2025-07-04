@@ -9,10 +9,10 @@ namespace Basic
         private static readonly int MoveSpeed = Animator.StringToHash("MoveSpeed");
         private Animator _animator;
     
-    void Start()
-    {
-        _animator = GetComponent<Animator>();
-    }
+        void Start()
+        {
+            _animator = GetComponent<Animator>();
+        }
 
         void Update()
         {
