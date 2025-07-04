@@ -50,7 +50,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.TryGetComponent<RobberController>(out var robberController))
+        if (other.TryGetComponent<RobberController>(out _))
         {
             _outsiderEntered = false;
             _outsiderGone = true;       
