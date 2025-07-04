@@ -28,7 +28,6 @@ public class NewBehaviourScript : MonoBehaviour
         
         if (_outsiderGone)
         {
-            //_audioSource.volume = Mathf.MoveTowards(_audioSource.volume, 0, Time.deltaTime);
             _passedTime += Time.deltaTime;
             _audioSource.volume = 1 - (_passedTime / (alertDescendingTime == 0 ? 1 : alertDescendingTime));
             if (_audioSource.volume <= 0.1f)
