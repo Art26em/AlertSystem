@@ -14,9 +14,10 @@ namespace Basic
         _animator = GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        transform.Translate(Vector2.right * (_moveSpeed * Time.deltaTime));
-        _animator.SetFloat(MoveSpeed, Mathf.Abs(_moveSpeed));
+        void Update()
+        {
+            transform.Translate(Vector2.right * (moveSpeed * Time.deltaTime));
+            _animator.SetFloat(MoveSpeed, Mathf.Abs(moveSpeed));
+        }
     }
 }
