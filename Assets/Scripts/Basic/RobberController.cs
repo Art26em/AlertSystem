@@ -14,7 +14,6 @@ public class RobberController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.right * (_moveSpeed * Time.deltaTime));
