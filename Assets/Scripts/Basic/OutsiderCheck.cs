@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+namespace Basic
 {
-    [SerializeField] private float alertAscendingTime;
-    [SerializeField] private float alertDescendingTime;
+    public class OutsiderCheck : MonoBehaviour
+    {
+        [SerializeField] private float alertAscendingTime;
+        [SerializeField] private float alertDescendingTime;
     
     private AudioSource _audioSource;
     private bool _outsiderEntered;
