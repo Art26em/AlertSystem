@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
 
+[RequireComponent(typeof(AlarmPlayer))]
+
 public class AreaScanner : MonoBehaviour
 {
     private AlarmPlayer _alarmPlayer;
