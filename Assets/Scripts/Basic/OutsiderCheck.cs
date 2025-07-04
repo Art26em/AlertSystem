@@ -40,7 +40,7 @@ public class NewBehaviourScript : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent<RobberController>(out var robberController))
+        if (other.TryGetComponent<RobberController>(out _))
         {
             _audioSource.Play();
             _outsiderEntered = true;
