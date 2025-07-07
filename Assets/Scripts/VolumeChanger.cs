@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-
+﻿
 public class VolumeChanger
 {
     public float GetVolume(float passedTime, float maxTime, bool ascending)

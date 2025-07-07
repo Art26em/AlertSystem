@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AlarmPlayer))]
+
 public class SignalizationController : MonoBehaviour
 {
     [SerializeField] private float alertAscendingTime;
